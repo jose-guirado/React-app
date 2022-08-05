@@ -15,7 +15,7 @@ function Card(props) {
                         <h5><strong>{props.dataProduct.name}</strong></h5>
                         <p>{props.dataProduct.description}</p>
                         <p>${props.dataProduct.price}</p>
-                        <Button text="Agregar al carrito" />
+                        <Button text="Ver más" />
                     </div>
                 </div>
             </div>

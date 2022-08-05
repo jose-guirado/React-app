@@ -3,6 +3,7 @@ import NaVBar from './components/NavBar/NavBar.jsx';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx';
 import Button from './components/Button/Button.jsx';
 import Card from './components/Card/Card';
+import ItemCount from './components/ItemCount/ItemCount.jsx';
 
 
 function App() {
@@ -29,7 +30,9 @@ function App() {
       <ItemListContainer greeting="Nuevos ingresos"/>
       <Card dataProduct={dataProduct[0]} />
       <Card dataProduct={dataProduct[1]} />
-    </div>
+      <ItemCount initial={1} stock={5}/>
+      </div>
+
   );
 }
 

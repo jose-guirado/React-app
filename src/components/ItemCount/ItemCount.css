@@ -1,0 +1,28 @@
+.contador {
+    color: white;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contador button {
+    border-color: white;
+    margin: 5px;
+    padding: 4px 10px 4px 10px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    justify-content: space-evenly
+}
+
+.contador h2 {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.contador h4 {
+    font-size: 15px;
+    padding-top: 5px;
+}
