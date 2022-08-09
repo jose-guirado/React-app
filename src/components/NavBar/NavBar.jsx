@@ -6,7 +6,7 @@ function NaVBar() {
         <nav className="navbar navbar-dark bg-dark">
             <div className="container-fluid">
                 <a className="navbar-brand" href="index.html"><strong>Black Onix Diamond</strong></a>
-                <CartWidget/>
+                <CartWidget />
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
