@@ -1,0 +1,31 @@
+.sectionDetail {
+    margin-top: 15px;
+    margin-left: 150px;
+    font-family: 'Poppins', sans-serif;
+    text-align: start;
+    font-size: 15px;
+    max-width: 500px;
+    background-color: white;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.detailImg {
+    width: 150px;
+}
+
+.detailName {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.detailPrice {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.detailStock {
+    font-size: 14px;
+    font-style: italic;
+}

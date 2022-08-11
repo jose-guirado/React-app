@@ -21,7 +21,7 @@ function ItemListContainer() {
 
     return (
         <>
-            <h4 className="title">{ItemListContainer.greeting}</h4>
+            <h4 className="title">Nuevos ingresos:</h4>
             <ItemList Data={Data} />
         </>
     );

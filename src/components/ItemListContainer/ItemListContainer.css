@@ -1,6 +1,13 @@
-.title{
+.title {
     margin-top: 15px;
     margin-left: 150px;
+    padding: 10px;
+    padding-left: 20px;
     font-family: 'Poppins', sans-serif;
     text-align: start;
+    font-weight: lighter;
+    color: white;
+    border-radius: 10px;
+    background-color: black;
+    max-width: 1050px;
 }

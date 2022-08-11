@@ -4,7 +4,8 @@ const dataProduct = [{
     name: "Jean azul marino",
     description: "Está diseñado con denim elastizado que se amolda a tu cuerpo; también cuenta con una apertura de pierna ajustada clásica, y una estilizadora cintura de media altura.",
     price: 5000,
-    imgurl: "https://static.dafiti.com.ar/p/mistral-3635-584636-1-zoom.jpg",
+    imgurl: "https://static.zara.net/photos///2022/V/0/2/p/0840/450/401/2/w/563/0840450401_6_1_1.jpg?ts=1642524864036",
+    imgurl1: "https://static.zara.net/photos///2022/V/0/2/p/0840/450/401/2/w/563/0840450401_6_2_1.jpg?ts=1642524864127",
     stock: 5,
 }, {
     id: "02",

@@ -1,5 +1,6 @@
 import React from 'react';
 import './ItemCount.css';
+import Swal from 'sweetalert';
 
 function ItemCount(props) {
     const [clicks, setClicks] = React.useState(1);
