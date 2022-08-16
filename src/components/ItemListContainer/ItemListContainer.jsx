@@ -2,20 +2,28 @@ import React, { useEffect, useState } from 'react';
 import './ItemListContainer.css';
 import dataProduct from '../Data/Data.jsx';
 import ItemList from '../ItemList/ItemList.jsx';
+import getProducts from '../../helpers/getProducts';
+import { useParams } from "react-router-dom";
 
-
-function getProducts() {
-    return new Promise((resolve) => {
-        setTimeout(() => resolve(dataProduct), 2000)
-    })
-}
 
 function ItemListContainer() {
     const [Data, setData] = useState([]);
+    const idCategory = useParams().idCategory;
+    function getProducts() {
+        return new Promise((resolve) => {
+            setTimeout(() => resolve(dataProduct), 2000)
+        })
+    }
 
     useEffect(() => {
         getProducts().then((respuesta) => {
-            setData(respuesta);
+            let filtro = dataProduct.filter(elemento => elemento.category === idCategory)
+            if (idCategory === undefined) {
+                setData(respuesta)
+            }
+            else {
+                setData(filtro)
+            }
         });
     }, []);
 

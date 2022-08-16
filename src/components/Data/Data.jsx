@@ -14,6 +14,7 @@ const dataProduct = [{
     description: "Sweater escote redondo con tejido jacquard fantasía en toda la prenda. De tacto suave.",
     price: 3500,
     imgurl: "https://d2r9epyceweg5n.cloudfront.net/stores/001/135/230/products/kic_320-9401-0781-132_prod11-3ca61ee9f7b105814e15882892547732-640-0.jpg",
+    imgurl1: "https://d2r9epyceweg5n.cloudfront.net/stores/001/135/230/products/kic_320-9401-0781-132_prod2-11-04953a046e598a9d0015882892562960-480-0.jpg",
     stock: 7,
 }];
 

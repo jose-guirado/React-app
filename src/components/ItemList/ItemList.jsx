@@ -8,6 +8,7 @@ function ItemList({ Data }) {
                 <>
                     <Card
                         key={producto.id}
+                        id={producto.id}
                         imgurl={producto.imgurl}
                         name={producto.name}
                         description={producto.description}

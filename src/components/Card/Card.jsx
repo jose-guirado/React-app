@@ -1,8 +1,9 @@
 import './Card.css';
 import Button from '../Button/Button.jsx';
+import { Link } from "react-router-dom";
 
 
-function Card({ imgurl, name, description, price }) {
+function Card({ imgurl, name, description, price, id }) {
 
     return (
         <div className="card mb-3">
@@ -15,7 +16,7 @@ function Card({ imgurl, name, description, price }) {
                         <h5><strong>{name}</strong></h5>
                         <p>{description}</p>
                         <p>${price}</p>
-                        <Button text="Ver más" />
+                        <Link class="btnVM" to={`/detalle/${id}`}> Ver más </Link>
                     </div>
                 </div>
             </div>
