@@ -1,6 +1,6 @@
 import React from 'react';
 import './ItemCount.css';
-import Swal from 'sweetalert';
+
 
 function ItemCount(props) {
     const [clicks, setClicks] = React.useState(1);
@@ -22,18 +22,17 @@ function ItemCount(props) {
         }
     }
 
-    const onAdd = () => {
-        alert("Añadido al carrito")
+    const handleClick = () => {
+        props.onAdd(clicks, alert("Añadido al carrito"));
     }
 
     return (
         <div className="contador">
-            <h2>Unidades</h2>
-            <button onClick={clickResta}><strong>-</strong></button>
-            <button onClick={clickReset}><strong>Reset</strong></button>
-            <button onClick={clickSuma}><strong>+</strong></button>
-            <h4>Número de productos: {clicks}</h4>
-            <button onClick={onAdd}>Agregar al carrito</button>
+            <div><button onClick={clickResta}><strong>-</strong></button>
+                <button onClick={clickReset}><strong>Reset</strong></button>
+                <button onClick={clickSuma}><strong>+</strong></button></div>
+            <div className="cantidad"><h4>{clicks}</h4></div>
+            <div><button onClick={handleClick}>Agregar al carrito</button></div>
         </div>
     )
 }

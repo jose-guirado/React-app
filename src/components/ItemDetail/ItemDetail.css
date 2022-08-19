@@ -29,3 +29,16 @@
     font-size: 14px;
     font-style: italic;
 }
+
+.btnShowCarrito{
+    text-decoration: none;
+    border: none;
+    margin: 0px 2px 0px 2px;
+    padding: 4px 8px 4px 8px;
+    color: #353535;
+    background-color: #d4d4d4;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    justify-content: space-evenly
+}
