@@ -30,6 +30,12 @@
     font-style: italic;
 }
 
+.detailBtn {
+    display: flex;
+    justify-content: end;
+    margin-left: 20px;
+}
+
 .btnShowCarrito{
     text-decoration: none;
     border: none;
@@ -41,4 +47,16 @@
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     justify-content: space-evenly
+}
+
+.btnVolverInicio{
+    text-decoration: none;
+    border: none;
+    margin: 0px 2px 0px 2px;
+    padding: 4px 17px 4px 17px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
 }

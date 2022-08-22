@@ -25,7 +25,7 @@ function ItemListContainer() {
                 setData(filtro)
             }
         });
-    }, []);
+    }, [idCategory]);
 
     return (
         <>

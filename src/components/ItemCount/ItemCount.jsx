@@ -23,7 +23,7 @@ function ItemCount(props) {
     }
 
     const handleClick = () => {
-        props.onAdd(clicks, alert("Añadido al carrito"));
+        props.onAdd(clicks);
     }
 
     return (

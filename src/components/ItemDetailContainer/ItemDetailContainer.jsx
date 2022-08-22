@@ -12,7 +12,7 @@ function ItemDetailContainer() {
         getProducts(id).then(respuesta => {
             setData(respuesta);
         });
-    }, []);
+    }, [id]);
 
     return (
         <>
