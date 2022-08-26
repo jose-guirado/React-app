@@ -10,11 +10,11 @@ function NaVBar() {
     return (
         <nav className="navbar navbar-dark bg-dark">
             <div className="container-fluid">
-                <a className="navbar-brand" href="/"><strong>Black Onix Diamond</strong></a>
+                <Link className="navbar-brand" to="/"><strong>Black Onix Diamond</strong></Link>
                 <CartWidget />
-                <span className="text-white">
+                {/* <span className="text-white">
                     {carrito.length}
-                </span>
+                </span> */}
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

@@ -48,13 +48,47 @@ const CartContextProvider = ({ children }) => {
         return (copyCart.find(item => item.id === id))
     }
 
+    // Función total productos
+    function totalAmount() {
+        let amountCart = 0;
+        copyCart.map(index => amountCart += index.clicks);
+        return amountCart;
+    }
+
+    // Función precio total productos
+    function totalPrice() {
+        let total = 0;
+        copyCart.map((index) => total += index.price * index.clicks);
+        return total;
+    }
+
+    // Función auxiliar
+    function plusItemsCart(id) {
+        if (copyCart[id].stock !== 0) {
+            copyCart[id].clicks += 1
+            copyCart[id].stock -= 1
+            setCarrito(copyCart)
+        }
+    }
+    function subItemsCart(id) {
+        if (copyCart[id].clicks !== 1) {
+            copyCart[id].clicks -= 1
+            copyCart[id].stock += 1
+            setCarrito(copyCart)
+        }
+    }
+
     return (
         <CartContext.Provider
             value={{
                 carrito,
                 addToCart,
                 removeItem,
-                removeAll
+                removeAll,
+                totalAmount,
+                totalPrice,
+                plusItemsCart,
+                subItemsCart
             }}>
             {children}
         </CartContext.Provider>

@@ -6,7 +6,7 @@ const dataProduct = [{
     price: 5000,
     imgurl: "https://static.zara.net/photos///2022/V/0/2/p/0840/450/401/2/w/563/0840450401_6_1_1.jpg?ts=1642524864036",
     imgurl1: "https://static.zara.net/photos///2022/V/0/2/p/0840/450/401/2/w/563/0840450401_6_2_1.jpg?ts=1642524864127",
-    stock: 5,
+    stock: 6,
 }, {
     id: "02",
     category: "buzos",

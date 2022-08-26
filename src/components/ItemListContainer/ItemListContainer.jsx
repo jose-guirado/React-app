@@ -4,6 +4,8 @@ import dataProduct from '../Data/Data.jsx';
 import ItemList from '../ItemList/ItemList.jsx';
 import getProducts from '../../helpers/getProducts';
 import { useParams } from "react-router-dom";
+import firestoreDB from "../../services/firebase.js";
+import { getDocs, collection } from "firebase/firestore"
 
 
 function ItemListContainer() {
