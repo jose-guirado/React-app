@@ -14,12 +14,3 @@ const app = initializeApp(firebaseConfig);
 const firestoreDB = getFirestore(app);
 
 export default firestoreDB;
-
-// Clase de Firebase sin resolver
-/* const indCollection = collection(firestoreDB, "indumentaria");
-getDocs(indCollection).then(snapshot => {
-    const docsData = snapshot.docs.map( doc => {
-        return {...doc.data(), id: doc.id}
-    });
-    resolve (docsData);
-    }); */
