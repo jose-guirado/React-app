@@ -1,11 +1,10 @@
 import './Cart.css';
 import CartProducts from "../CartProducts/CartProducts.jsx";
-import Checkout from '../Checkout/Checkout.jsx';
-import dataProduct from '../Data/Data.jsx';
 import { useContext, useEffect } from 'react'
 import { CartContext } from '../../context/CartContext.jsx';
 import { Link } from "react-router-dom"
 import Swal from 'sweetalert';
+
 
 function Cart() {
     const { carrito, removeItem, removeAll, totalPrice, totalAmount, plusItemsCart, subItemsCart } = useContext(CartContext);
@@ -27,7 +26,7 @@ function Cart() {
             icon: "warning",
             title: "El carrito está vacío",
             text: "Vuelve al inicio para comprar",
-    })
+        })
         return (
             <main>
                 <div className="emptyCartContainer">
@@ -67,8 +66,8 @@ function Cart() {
                     <h3 className="resume">Cantidad: {totalAmount()} productos</h3>
                     <h3 className="resume">Subtotal: ${totalPrice()}</h3>
                     <div className="containerButtonsResume">
-                        <Link to={"/"}><button className="cartResumeButtons">Seguir Comprando </button></Link>
-                        <Link to={"/Checkout"}><button className="cartResumeButtons">Finalizar Compra </button></Link>
+                        <Link to={"/"}><button className="cartResumeButtons">Agregar más productos </button></Link>
+                        <Link to={"/checkout"}><button className="cartResumeButtons">¡Lo compro! </button></Link>
                     </div>
                 </section>
             </main>

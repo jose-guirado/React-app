@@ -12,6 +12,7 @@ const CartContextProvider = ({ children }) => {
             const itemList = findItem(Data.id)
             copyCart[itemList].clicks += clicks;
             setCarrito(copyCart)
+            console.log(copyCart)
         }
         else {
             copyCart.push({ ...Data, clicks });
@@ -44,7 +45,7 @@ const CartContextProvider = ({ children }) => {
 
     // Función búsqueda de un item por id
     function findItem(id) {
-        return (copyCart.findIndex(item => item.id === id))
+        return (copyCart.find(item => item.id === id))
     }
 
     // Función total productos

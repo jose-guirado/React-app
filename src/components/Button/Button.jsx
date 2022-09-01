@@ -1,9 +1,12 @@
 import './Button.css';
+import Swal from 'sweetalert';
 
-function Button({text}) {
-    return (
-        <button className="btn">{text}</button>
-    )
+
+function Button () {
+    Swal({
+        icon: "success",
+        text: "¡Gracias por tu compra!",
+    });
 }
 
 export default Button;
