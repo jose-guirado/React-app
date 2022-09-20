@@ -31,7 +31,7 @@ function Cart() {
             <main>
                 <div className="emptyCartContainer">
                     <div className="titleEmptyContainer">
-                        <h1>Carrito Vacío</h1>
+                        <h1>Carrito vacío</h1>
                         <img className="carritoVacio" src="https://cdn-icons-png.flaticon.com/512/102/102661.png" alt="carrito vacío"></img>
                     </div>
                     <Link to={"/"}><button className="cartResumeButton">Volver al home</button></Link>
