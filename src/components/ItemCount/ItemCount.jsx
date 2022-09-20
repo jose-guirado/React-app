@@ -4,7 +4,6 @@ import './ItemCount.css';
 
 function ItemCount(props) {
     const [clicks, setClicks] = React.useState(1);
-    console.log(props.stock, props.initial);
 
     function clickSuma() {
         if (clicks >= 1 && clicks < props.stock) {

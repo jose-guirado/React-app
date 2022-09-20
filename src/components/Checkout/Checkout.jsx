@@ -38,14 +38,6 @@ function Checkout() {
         clearCart()
     }
 
-    /*         setUserData({
-                email: "",
-                name: "",
-                phone: ""
-            });
-            console.log(listaCompra);
-        } */
-
     function changeInput(e) {
         const input = e.target;
         const value = input.value;
@@ -55,7 +47,6 @@ function Checkout() {
 
         copyUserData[inputName] = value;
         setUserData(copyUserData);
-        console.log(copyUserData);
     }
 
     if (orderFirebase.complete === true) {

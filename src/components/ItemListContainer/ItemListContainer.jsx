@@ -12,7 +12,6 @@ function ItemListContainer() {
 
     function getItemsFromDB() {
         return new Promise((resolve => {
-            // setTimeout(() => resolve(dataProduct), 2000)
             const indumCollection = collection(firestoreDB, "indumentaria")
             getDocs(indumCollection).then(snapshot => {
                 const docsData = snapshot.docs.map(doc => {

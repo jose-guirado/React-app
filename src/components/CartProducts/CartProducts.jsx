@@ -10,13 +10,7 @@ function CartProducts({ imgurl, name, price, clicks, removeItemCart, id, stock, 
                 <h2 className='cartName'>{name}</h2>
                 <h3 className='cartAmount'>Cantidad: {clicks}</h3>
                 <h3 className='cartSubtotal'> Subtotal: ${price}</h3>
-                <h3 className='cartStock'>Stock Disponible: {stock}</h3>
-{/*                 <h3 className='cartQuestion'>¿Desea agregar/quitar productos?</h3>
-                <div className="buttonsContainer">
-                    <button className='products-buttons' onClick={() => subItem(id)}>-</button>
-                    <h2>{clicks}</h2>
-                    <button className='products-buttons' onClick={() => plusItem(id)}>+</button>
-                </div> */}
+                <h3 className='cartStock'>Stock disponible: {stock}</h3>
                 <button className='cartDeleteItem' onClick={() => removeItemCart(id)}>Remove</button>
             </div>
         </div>

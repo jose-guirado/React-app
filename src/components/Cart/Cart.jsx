@@ -59,7 +59,7 @@ function Cart() {
                             />
                         )
                     })}
-                    <button className="cartDeleteAll" onClick={removeAll}> Vaciar Carrito </button>
+                    <button className="cartDeleteAll" onClick={removeAll}> Vaciar carrito </button>
                 </section>
                 <section className="cartResume">
                     <h1 className="titleResume">Resumen del Pedido</h1>
